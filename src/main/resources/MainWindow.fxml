@@ -11,12 +11,17 @@
       <TextArea fx:id="chatArea" editable="false" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
-      <HBox BorderPane.alignment="CENTER">
-         <children>
-            <TextArea fx:id="msgArea" prefHeight="200.0" prefWidth="200.0" />
-            <Button fx:id="sendButton" mnemonicParsing="false" text="Send" />
-         </children>
-      </HBox>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <TextArea fx:id="sendArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Button fx:id="sendButton" mnemonicParsing="false" text="Send" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <Button fx:id="joinChannelButton" mnemonicParsing="false" text="Join Default Channel" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
    </bottom>
    <top>
       <HBox BorderPane.alignment="CENTER">
